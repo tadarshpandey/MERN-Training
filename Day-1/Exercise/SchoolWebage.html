@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: linen;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .top-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .school-name{
+            margin: 0;
+            font-size: 24px;
+        }
+        .image-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .footer{
+            text-align: center;
+            margin-top: 24px;
+        }
+        .events{
+            width: 100%;
+            margin-left: 15px;
+            display: flex;
+            gap: 20px;
+            padding: 0 15px;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .side-image{
+            
+            width: 45%;          /* Takes up the remaining half of the space */
+            height: auto;
+            object-fit: cover;   /* Ensures the image doesn't stretch weirdly */
+            border-radius: 8px;  /* Optional: gives the image slightly rounded corners */
+
+        }
+        
+        /* Styles ONLY for the Events Table */
+        .events-table {
+            border-collapse: collapse; 
+            width: 50%;
+            background-color: rgb(12, 26, 52);
+            color: aliceblue;
+        }
+
+        .events-table th, .events-table td {
+            border: 2px solid rgb(255, 255, 255); 
+            padding: 8px; 
+            text-align: center;
+        }
+        /* Container to keep the table centered and neat */
+        .timetable-container {
+            width: 80%;
+            margin: 40px auto; /* Centers the div on the page */
+            font-family: Arial, sans-serif;
+        }
+
+        .timetable-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* The Table Styling */
+        .school-timetable {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow for a modern look */
+        }
+
+        .school-timetable th, .school-timetable td {
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* Header Row Styling */
+        .school-timetable th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* Styling for the specific Days column */
+        .day-col {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* Special styling for the Lunch Break cell */
+        .lunch-break {
+            background-color: #e0e0e0;
+            letter-spacing: 2px;
+            color: #555;
+        }
+
+        /* Slight hover effect for rows */
+        .school-timetable tr:hover td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="brand-container">
+            <img src="schoollogo.jpg" alt="Error" height="30px" width="30px">
+            <p class="school-name"><strong>Gurukulam Public School</strong></p>
+        </div>
+        <nav>
+            <a href="#" >Home</a> &nbsp;
+            <a href="#events">Event</a> &nbsp;
+            <a href="#timetable-container" >Schedule</a> &nbsp;
+
+        </nav>
+
+    </header>
+    <hr>
+    <div class="image-container">
+        <marquee>
+            <img src="schoolimage.png" alt="School image" height="50%" width="50%">
+        </marquee>
+    </div>
+    <hr>
+    <div >
+        <P style="text-align: center;"><strong>Upcoming Events</strong></P>
+        <div class="events" id="events">
+            <table class="events-table" >
+                <tr>
+                    <th>
+                        S. no.
+                    </th>
+                    <th>
+                        list of events
+                    </th>
+                    <th>
+                        description
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        1.
+                    </td>
+                    <td>
+                        Annual fest
+                    </td>
+                    <td>
+                        A very precious every year this fest goes 
+                        arranged by school drama teacher & sponsored
+                        by school management student showcase full
+                        thier performance as well there
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2.
+                    </td>
+                    <td>
+                        Annual fest
+                    </td>
+                    <td>
+                        A very precious every year this fest goes 
+                        arranged by school drama teacher & sponsored
+                        by school management student showcase full
+                        thier performance as well there
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3.
+                    </td>
+                    <td>
+                        Annual fest
+                    </td>
+                    <td>
+                        A very precious every year this fest goes 
+                        arranged by school drama teacher & sponsored
+                        by school management student showcase full
+                        thier performance as well there
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4.
+                    </td>
+                    <td>
+                        Annual fest
+                    </td>
+                    <td>
+                        A very precious every year this fest goes 
+                        arranged by school drama teacher & sponsored
+                        by school management student showcase full
+                        thier performance as well there
+                    </td>
+                </tr>
+
+
+            </table>
+            <img class="side-image" src="event.jpg" alt="School events" >
+            
+        </div>
+                
+    </div>
+
+    <hr>
+    <div>
+
+    </div>
+    <div class="timetable-container" id="timetable-container">
+        <h2 class="timetable-title">Class Timetable (MCA)</h2>
+        
+        <table class="school-timetable">
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 9:50<br>(Period 1)</th>
+                <th>9:50 - 10:40<br>(Period 2)</th>
+                <th>10:40 - 11:20<br>(Break)</th>
+                <th>11:20 - 12:10<br>(Period 3)</th>
+                <th>12:10 - 1:00<br>(Period 4)</th>
+            </tr>
+
+            <tr>
+                <td class="day-col">Monday</td>
+                <td>Python Programming</td>
+                <td>Computer Networks</td>
+                <td rowspan="5" class="lunch-break"><strong>LUNCH<br>BREAK</strong></td>
+                <td>Web Technology</td>
+                <td>Database Mgmt</td>
+            </tr>
+
+            <tr>
+                <td class="day-col">Tuesday</td>
+                <td>Java Programming</td>
+                <td>Web Technology</td>
+                <td>Python Programming</td>
+                <td>Software Engineering</td>
+            </tr>
+
+            <tr>
+                <td class="day-col">Wednesday</td>
+                <td>Database Mgmt</td>
+                <td>Java Programming</td>
+                <td>Computer Networks</td>
+                <td>Lab Practicals</td>
+            </tr>
+
+            <tr>
+                <td class="day-col">Thursday</td>
+                <td>Software Engineering</td>
+                <td>Python Programming</td>
+                <td>Java Programming</td>
+                <td>Library / Self-Study</td>
+            </tr>
+
+            <tr>
+                <td class="day-col">Friday</td>
+                <td>Web Technology</td>
+                <td>Database Mgmt</td>
+                <td>Lab Practicals</td>
+                <td>Sports / Extra-Curr.</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <hr>
+    <footer>
+        
+        <p align="center"> &copy; All rights reserved</p>
+    </footer>
+    
+    
+</body>
+</html>
