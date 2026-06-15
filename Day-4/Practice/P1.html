@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day-4: JS</title>
+
+    <script>
+        function anyValue(){
+            //having value of input from html using their respective ID 'a' or 'b' whatever it is
+            let var1 = document.getElementById("a").value;
+            let var2 = document.getElementById("b").value;
+
+            //convertiing it to in which datatype we want those values...
+            let num1 = parseFloat(var1);
+
+            let num2 = parseFloat(var2);
+
+            if(isNaN(num1) || isNaN(num2))
+            {
+                document.getElementById("result").value="invalid input";
+                result;
+            }
+
+            let total = num1 + num2;
+
+            document.getElementById("result").value = total;
+
+
+        }
+
+        function substract(){
+            //having value of input from html using their respective ID 'a' or 'b' whatever it is
+            let var1 = document.getElementById("a").value;
+            let var2 = document.getElementById("b").value;
+
+            //convertiing it to in which datatype we want those values...
+            let num1 = parseFloat(var1);
+
+            let num2 = parseFloat(var2);
+
+            if(isNaN(num1) || isNaN(num2))
+            {
+                document.getElementById("result").value="invalid input";
+                result;
+            }
+
+            let total = num1 - num2;
+
+            document.getElementById("result").value = total;
+
+
+        }
+        function mul(){
+            //having value of input from html using their respective ID 'a' or 'b' whatever it is
+            let var1 = document.getElementById("a").value;
+            let var2 = document.getElementById("b").value;
+
+            //convertiing it to in which datatype we want those values...
+            let num1 = parseFloat(var1);
+
+            let num2 = parseFloat(var2);
+
+            if(isNaN(num1) || isNaN(num2))
+            {
+                document.getElementById("result").value="invalid input";
+                result;
+            }
+
+            let total = num1 * num2;
+
+            document.getElementById("result").value = total;
+
+
+        }
+
+        function divide(){
+            //having value of input from html using their respective ID 'a' or 'b' whatever it is
+            let var1 = document.getElementById("a").value;
+            let var2 = document.getElementById("b").value;
+
+            //convertiing it to in which datatype we want those values...
+            let num1 = parseFloat(var1);
+
+            let num2 = parseFloat(var2);
+
+            if(isNaN(num1) || isNaN(num2))
+            {
+                document.getElementById("result").value="invalid input";
+                result;
+            }
+
+            if (num2 === 0) {
+                document.getElementById("result").value = "Cannot divide by zero";
+                return;
+            }
+
+            let total = num1 / num2;
+           
+
+            document.getElementById("result").value = total;
+
+
+        }
+
+        function reset(){
+            document.getElementById("a").value = "";
+            document.getElementById("b").value = "";
+        }
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 align="center">Calculations</h2>
+        </nav>
+    </header>
+
+    <main >
+        <form >
+            <table style="width: 100%; display: flex; justify-content: center;">
+                <tr>
+                    <td>
+                        <label>Value 1:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="a"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label align="right">Value 1:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="b"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button  type="button" onclick="anyValue()" >Sum</button>
+                        <button  type="button" onclick="substract()" >substract</button>
+                        <button  type="button" onclick="mul()" >multiply</button>
+                        <button  type="button" onclick="divide()" >divide</button>
+                        <button  type="button" onclick="reset()" >Reset</button>
+                    </td>
+                    <td>
+                        <input type="text" id="result">
+                    </td>
+                    
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <footer style="background-color: rgb(42, 42, 42); color: white; padding: 20px;">
+        <hr>
+        <p align="center" >
+            &copy; All rights reserved. By all india technology labs for calculation.
+        </p>
+    </footer>
+
+    
+</body>
+</html>
