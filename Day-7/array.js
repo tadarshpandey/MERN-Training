@@ -1,72 +1,72 @@
-// // Array: Array is an ordered collection  which stores multiple values
-// // Array: Each elements has index, and it starts from zero 
+// Array: Array is an ordered collection  which stores multiple values
+// Array: Each elements has index, and it starts from zero 
 
-// // RRR
+// RRR
 
-// const numbers = [1,2,3,4,5,6,7]
+const numbers = [1,2,3,4,5,6,7]
 
-// const mixed = [1, "hello", true, null, { any: "thing"}];
+const mixed = [1, "hello", true, null, { any: "thing"}];
 
-// console.log(numbers);
+console.log(numbers);
 
-// console.log(mixed);
-
-
-
-// // array declaration using array constructor...
-// const empty = new Array(5);
-
-// const number = new Array(1, 2, 3, 4, 5);
-
-// console.log(empty);
-// console.log(number);
-
-// const arr = [1,2,3,4,5,6];
-
-// console.log(arr[2]);
-// console.log(arr.length - 2);
-
-// // modifying array data element
+console.log(mixed);
 
 
-// arr[1]= 4;
 
-// console.log(arr)
+// array declaration using array constructor...
+const empty = new Array(5);
 
-// // to input or remove element from starting of array use shift() n unshift() method for it
+const number = new Array(1, 2, 3, 4, 5);
 
-// // to input or remove element from ending of array use push() n pop()
-// //example:
+console.log(empty);
+console.log(number);
 
-// arr.push(5);
-// console.log(arr);
+const arr = [1,2,3,4,5,6];
 
-// const last = arr.pop();
+console.log(arr[2]);
+console.log(arr.length - 2);
 
-// console.log(last);
-
-// arr.shift();
-// console.log(arr);
-
-// arr.unshift(2); // always used to give value when trying to unshift() or giving input at 0th index of array
-// console.log(arr);
+// modifying array data element
 
 
-// // another method... 
+arr[1]= 4;
+
+console.log(arr)
+
+// to input or remove element from starting of array use shift() n unshift() method for it
+
+// to input or remove element from ending of array use push() n pop()
+//example:
+
+arr.push(5);
+console.log(arr);
+
+const last = arr.pop();
+
+console.log(last);
+
+arr.shift();
+console.log(arr);
+
+arr.unshift(2); // always used to give value when trying to unshift() or giving input at 0th index of array
+console.log(arr);
 
 
-// // splice() method
+// another method... 
 
-// const arr2 = [1,2,3,44];
 
-// arr2.splice(2, 2, 4, 5);
-// console.log(arr2);
-// //arr2.splice(2, 0, 4);
-// // splice method is very used parameters that firsly takes index from there operations performed
-// // and then another paramerter says at how much number of elements deleted and
-// //  after that it will be given last paramter what elements gonna be pushed 
+// splice() method
 
-// console.log(arr2);
+const arr2 = [1,2,3,44];
+
+arr2.splice(2, 2, 4, 5);
+console.log(arr2);
+//arr2.splice(2, 0, 4);
+// splice method is very used parameters that firsly takes index from there operations performed
+// and then another paramerter says at how much number of elements deleted and
+//  after that it will be given last paramter what elements gonna be pushed 
+
+console.log(arr2);
 
 
 const nums = [1, 2, 3, 4, 5, 6];

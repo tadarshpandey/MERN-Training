@@ -28,6 +28,7 @@ include() method return true/false
 
 
 
------------------------------------------------
+----------------------------------------------->>>>>>>>>>>>>>>>>>>>>
 objects: is and unordered collections, and real world entities
 in JS the object is defined as key-value paris where keys are string or symbol
+
