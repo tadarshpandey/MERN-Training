@@ -2,4 +2,5 @@ react is a js library
 node js is a runtime environment 
 express js is for backend
 
-async, await, callback functionsnp
+async, await, callback functions
+
