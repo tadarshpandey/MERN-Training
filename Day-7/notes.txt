@@ -1,0 +1,33 @@
+splice() method in array
+
+splice() method: only this method do changes in same array and remain others make new arrays perform operations
+
+ const arr2 = [1,2,3,44];
+
+ arr2.splice(2, 2, 4, 5);
+ console.log(arr2);
+ arr2.splice(2, 0, 4);
+ splice method is very used parameters that firsly takes index from there operations performed
+ and then another paramerter says at how much number of elements deleted and
+ after that it will be given last paramter what elements gonna be pushed 
+
+
+slice() method in array
+>> leaves the last element, which mean includes starting element and leave the last ones
+map() = transform elements in array
+
+filter() method in array
+
+reduce() method in array
+
+
+
+forEach loop: 
+find() method return index number
+include() method return true/false
+
+
+
+-----------------------------------------------
+objects: is and unordered collections, and real world entities
+in JS the object is defined as key-value paris where keys are string or symbol

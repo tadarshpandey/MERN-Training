@@ -1,0 +1,2 @@
+1. use copy and merge method define in an array.
+2. 
