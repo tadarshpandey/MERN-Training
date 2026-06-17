@@ -1,0 +1,72 @@
+-->>definng function inside an Object in javascript:
+>> example:
+
+const obj = {
+    name: "Adarsh",
+    greet(){
+        console.log("Bow down to me I'm your BigBoss");
+    }
+}
+
+obj.greet();
+
+
+
+-->>methods used in javascript while using Objects in JS:
+
+1. Object.entries()>>>> object name in code used as paramerter to be passed here in between ()
+
+example: 
+console.log(Object.entries(fnc));
+
+2. Object.freeze()>>>> when this function applied then value of object's keys will not be change whenever tried to be
+                       it always returns previous value what assigned previously
+
+3. Object.assign()>>>> copies properties from one object to another.
+
+4. Object.seal()>>>> No Additions or Deletions: You cannot add new keys to the object, nor can you remove existing ones.
+                    Values Remain Editable: Existing properties can be updated as long as their writable descriptor is set to true.
+
+
+
+
+any data passed while function declaration is paramerters....and while function calling it is arguments...
+-->> Callback function - Callback function is a function passsed asa an argument to anoother function .
+
+callback hell- callback hell occurs when multiple asynchronous callback functions are nested within one another, making the code extremely hard to read, debug, and maintain.
+
+-->> Synchronous vs Asynchronous Programming in JavaScript:
+
+1. Synchronous Code:
+- Executes line by line, sequentially from top to bottom.
+- Each operation must wait for the previous one to finish before starting.
+- It is "blocking" (e.g., a heavy task will freeze the program until it completes).
+
+Example:
+console.log("1. Start");
+console.log("2. Middle");
+console.log("3. End");
+// Output strictly follows order: 1. Start -> 2. Middle -> 3. End
+
+
+2. Asynchronous Code:
+- Allows the program to continue executing the rest of the code while waiting for a long-running operation to finish (e.g., fetching data from an API, reading files, timers).
+- It is "non-blocking".
+- JavaScript handles async tasks using Callbacks, Promises, or Async/Await.
+
+Example:
+console.log("1. Start");
+
+// setTimeout is an asynchronous web API function
+setTimeout(() => {
+    console.log("2. Middle (Async Task Done!)");
+}, 2000); // Wait for 2 seconds (2000ms) but don't block the rest of the code
+
+console.log("3. End");
+// Output: 
+// 1. Start 
+// 3. End 
+// (Wait 2 seconds...) 
+// 2. Middle (Async Task Done!)
+
+
