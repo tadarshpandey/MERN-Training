@@ -70,3 +70,5 @@ console.log("3. End");
 // 2. Middle (Async Task Done!)
 
 
+-->> Promises:  
+
