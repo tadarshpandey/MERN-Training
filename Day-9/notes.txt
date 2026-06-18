@@ -1,3 +1,56 @@
 -->> Promises: A Promise represents the eventual completion of failure of an asynchronous operation.
                 operation. pending, fulfilled , rejected
 
+->Promises delay:
+
+function wait2sec(){
+    return new Promise(resolve => {
+        console.log("waiting........")
+        setTimeout(() => {
+            resolve("executed after 5 seconds")
+            //console.log("executed after 5 seconds")
+        }, 5000);
+    })
+}
+
+wait2sec().then(message => console.log(message));
+
+console.log("this wil execute before above function of settimeout runs.....");
+
+
+// that is above another example of ansychronous code.....
+
+
+-->> Promises chaining: running multiple async task one after another  each '.then' for the previous 'Promise' to finish then passes
+                        its result to the next one.
+
+
+-> async/await: Syntactic sugar built on top of Promises. It makes asynchronous code easier to write and read, looking more like synchronous code.
+                - 'async': Declares an asynchronous function that always returns a Promise.
+                - 'await': Pauses the execution of the async function until the Promise settles (resolves or rejects).
+
+// Example using the wait2sec() function from above:
+async function handleWait() {
+    console.log("Starting async task...");
+    
+    // Execution pauses here until wait2sec() finishes
+    const message = await wait2sec(); 
+    console.log("Result:", message);
+    
+    console.log("Async task done!");
+}
+
+handleWait();
+
+
+-->> DOM (Document Object Model): 
+
+> document.getElementById()
+> document.getElementByClassName()
+> document.getEelementByTagName()
+> document.querySelector()
+> document.querySelectorAll()
+> document.createElement()
+
+
+-->> Event Handling: 
