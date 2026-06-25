@@ -1,0 +1,31 @@
+>> What is an API?
+
+- API [Application Program Interface] is a bridge that allows applications to communiicate with each other.
+- Uses: 
+- Fetch data
+- Send data
+- 
+
+- types: 
+- REST API
+- Fetch API
+
+>> Hooks:
+
+- useState – Manages and updates component state in React.
+[Component state is the data that belongs to a React component and can change over time.
+
+When state changes, React automatically re-renders the component to show the updated data.]
+
+- useEffect – Performs side effects like API calls, timers, or DOM updates.
+
+
+- useContext – Accesses and shares data across components without prop drilling.
+
+- useRef – Stores mutable values and directly references DOM elements without re-rendering.
+
+- useReducer – Manages complex state logic using actions and a reducer function.
+
+- useCallback – Memoizes a function to prevent unnecessary re-creation on re-renders.
+
+- useMemo – Memoizes a computed value to optimize expensive calculations.

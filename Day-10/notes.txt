@@ -1,0 +1,17 @@
+>> we implemented delhi metro route finding system in html/css, js
+
+>> creating react app
+-->> traditional way :
+- command: nx create-react-project project-name
+- command: cd myreactapp
+- command: npm install
+- command: npm start
+
+
+>> commulative directroy...
+
+
+-->> another way:
+- npm create vite@latest my-react-app -- --template react
+-
+-

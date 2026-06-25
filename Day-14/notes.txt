@@ -1,0 +1,18 @@
+// day 14: from day 0....
+
+>> today we are going to learn react concepts>> props state
+
+
+-->> passing props: transfers data
+
+-->> state: stores dynamix data inside a component...states updates the UI automatically when a data changes...
+
+> useState Hook: const [state, setState] = useState(initialValue)
+
+-> useCallback:
+- useCallback in react Hook that remembers a function , so it does not get recreated on every render....
+
+
+-> Why we use it?
+- without callback react creates a new function on every render
+- with useCallback same function reference reused unless dependencies changed.

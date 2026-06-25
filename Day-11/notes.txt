@@ -1,0 +1,35 @@
+-->> react project is going to start .....
+
+> 1. LMS-Learning Management System
+> 2. ERP- Enterprise login
+> 3. AI resume builder
+> 4. 
+
+>> WHy react?
+
+- Component-Based Architecture
+- Virtual DOM
+- Reusable
+- Fast Rendering
+
+
+>> Traditional JS vs react
+
+- Manual DOM vs Virtual DOM
+- More Code vs Less Code
+- Hard Maintenance vs Easy Maintenance 
+
+
+>> What is JSX?
+- JSX allows us to write HTML-like code inside JavaScript.
+- JSX: JavaScript XML
+
+>> JSX rule:
+
+- single parent element
+- variable declared outisde the function
+- JSX written inside the function
+
+>> functional Component:
+
+- 
