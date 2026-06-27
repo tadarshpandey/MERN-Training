@@ -1,0 +1,10 @@
+| Feature                     | Fetch       | Axios                 |
+| --------------------------- | ----------- | --------------------- |
+| Built into JS               | ✅ Yes      | ❌ No                  |
+| Installation                | ❌ No       | ✅ `npm install axios` |
+| Converts JSON automatically | ❌ No       | ✅ Yes                 |
+| Error handling              | More manual  | Easier                |
+| Request timeout             | Manual       | Built-in              |
+| Interceptors                | ❌ No        | ✅ Yes                 |
+| Upload progress             | Difficult   | Easy                  |
+
