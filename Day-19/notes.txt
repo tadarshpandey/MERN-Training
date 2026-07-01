@@ -1,0 +1,8 @@
+- stringify: Stringify turns objects into strings for saving or sending, 
+
+- parsing: while parse turns text back into objects so you can use them. 
+
+
+>> MongoDB: 
+
+

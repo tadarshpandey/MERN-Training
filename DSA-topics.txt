@@ -1,0 +1,10 @@
+- time complexity
+- backtracking
+- recursion
+- two pointers
+- hashing
+
+-> ALgorithms:
+> greedy
+> krushkals
+>

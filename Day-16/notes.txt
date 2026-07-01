@@ -10,7 +10,12 @@
 - REST API
 - Fetch API
 
->> Hooks:
+>> Hooks: React Hooks are built-in JavaScript functions that allow you to use state and 
+          other React framework features inside functional components.
+
+>> Prop drilling: Prop drilling (also known as "threading props") is the process of passing
+                  data down through multiple nested components in React,
+                  even when the intermediate components don't need the data themselves
 
 - useState – Manages and updates component state in React.
 [Component state is the data that belongs to a React component and can change over time.

@@ -1,0 +1,18 @@
+>> MongoDB Shell: 
+
+
+>>> logical operators:
+
+- $nin : not in one or ont in two
+- $or : Or
+- $and : and
+
+
+>> find():
+
+>> sort():
+
+>> limit():
+
+>> db.db_name.find().skip().limit()
+
