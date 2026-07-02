@@ -48,3 +48,31 @@ db.student.aggregate([
     }
 ])
 
+
+
+db.students.countDocument() //total document in collection 
+
+db.students.insertOne({name:"jyotika" , rollno :101}) //COLLECTIN "students created" 
+
+
+db.createCollection("students", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["name", "rollno"],
+      properties: {
+        name: { 
+          bsonType: "string" 
+        },
+        rollno: { 
+          bsonType: "int", 
+          minimum: 1 
+        },
+        marks: { 
+          bsonType: "double" 
+        }
+      }
+    }
+  }
+})
+

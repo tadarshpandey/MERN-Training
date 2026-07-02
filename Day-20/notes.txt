@@ -16,3 +16,10 @@
 
 >> db.db_name.find().skip().limit()
 
+>> npm: node package manager
+
+>> npm init -y: creates package
+
+>> npm install express
+
+
